@@ -1,0 +1,47 @@
+.time {
+  width: 90%;
+  border-radius: 15px;
+  background: hsl(330, 100%, 98%);
+}
+.time__title {
+  font-family: "Outfit";
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+  margin-left: 25px;
+}
+@media (min-width: 320px) and (max-width: 900px) {
+  .time__title {
+    margin-left: 10px;
+  }
+}
+.time__list {
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px 0px 25px 45px;
+  padding: 0;
+  color: hsl(30, 10%, 34%);
+}
+.time__list li {
+  margin-bottom: 10px;
+}
+.time__list li::marker {
+  font-size: 0.6em;
+  color: hsl(332, 51%, 32%);
+}
+.time__list li span {
+  padding-left: 15px;
+  font-weight: 600;
+}
+@media (min-width: 320px) and (max-width: 900px) {
+  .time__list li span {
+    padding-left: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 900px) {
+  .time__list {
+    margin: 0px 0px 10px 35px;
+  }
+}/*# sourceMappingURL=time.css.map */
