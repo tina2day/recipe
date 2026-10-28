@@ -1,71 +1,41 @@
-# Recipe Page
+# Recipe Page — страница рецепта
 
-This is my solution to the [Recipe Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
+Адаптивная страница рецепта пасты с грибами, созданная по мотивам [задания Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Помимо вёрстки, я добавила выбор количества порций и автоматический пересчёт ингредиентов на JavaScript.
 
-The goal of this project was to build a responsive recipe page based on the provided design, focusing on semantic HTML, clean CSS, and a well-structured layout.
+**[Посмотреть сайт](https://tina2day.github.io/recipe/)** · **[Исходный код](https://github.com/tina2day/recipe)**
 
-![Recipe Page Preview](./preview.jpg)
+## Возможности
 
-## Overview
+- Страница адаптируется к ширине экрана.
+- Количество порций можно менять кнопками или вводить в поле: от 1 до 10.
+- Количество ингредиентов пересчитывается сразу после изменения числа порций.
+- Кнопка **Reset** возвращает исходные 4 порции и первоначальные значения.
+- На странице также есть время приготовления, список ингредиентов, шаги рецепта и информация о пищевой ценности.
 
-### Features
+Пересчёт использует исходные значения для четырёх порций: `новое количество = исходное количество × выбранные порции / 4`. Блок пищевой ценности не пересчитывается.
 
-- Responsive layout for desktop and mobile devices
-- Structured recipe content with ingredients and cooking instructions
-- Preparation and cooking time section
-- Nutritional information section
-- Custom typography and consistent spacing
-- Clean and readable design
+## Технологии
 
-### Links
+HTML5, CSS3, SCSS, JavaScript. Для расположения элементов использованы Flexbox и медиазапросы; классы организованы по БЭМ.
 
-- [GitHub Repository](https://github.com/tina2day/recipe)
-- [GitHub Pages](https://tina2day.github.io/recipe/)
+## Запуск локально
 
-## Built With
+Склонируйте репозиторий и запустите локальный сервер из корня проекта:
 
-- Semantic HTML5
-- CSS3
-- CSS Flexbox
-- Responsive Design
-- Media Queries
-- BEM Naming Convention
+```bash
+git clone https://github.com/tina2day/recipe.git
+cd recipe
+python -m http.server 8000
+```
 
-## What I Learned
+Откройте [http://localhost:8000](http://localhost:8000). Можно также открыть `index.html` через расширение Live Server в VS Code. Установка npm-пакетов не нужна.
 
-Working on this project helped me strengthen my HTML and CSS skills, especially when creating structured, content-focused web pages.
+## Чему я научилась
 
-**Semantic HTML**
+Я потренировалась переносить макет в адаптивную HTML-страницу, оформлять список и типографику, обрабатывать события `input` и `click`, проверять число порций и обновлять текст элементов DOM на основе исходных данных.
 
-I practiced using semantic HTML elements such as `main`, `header`, `section`, `ul`, and `ol` to organize content and improve document structure.
+## Что хочу улучшить
 
-**Responsive Design**
-
-I gained more experience adapting layouts to different screen sizes, focusing on readability, spacing, and content presentation.
-
-**Working with Lists**
-
-I practiced styling ordered and unordered lists, customizing their appearance, and maintaining consistent spacing between elements.
-
-**BEM Methodology**
-
-I improved my ability to organize CSS classes using the Block Element Modifier (BEM) naming convention to create readable and maintainable styles.
-
-**Typography and Visual Hierarchy**
-
-I learned how to use font sizes, weights, colors, and spacing to create a clear visual hierarchy and make content easier to read.
-
-**Working with Design References**
-
-I improved my attention to detail by recreating the provided design, focusing on element alignment, spacing, typography, and colors.
-
-## Future Improvements
-
-- Improve accessibility and semantic markup
-- Use a semantic HTML table for nutritional information
-- Further refine responsive behavior for different screen sizes
-- Optimize CSS organization
-
-## Author
-
-- GitHub: [@tina2day](https://github.com/tina2day)
+- Добавить понятные подписи полю и кнопкам для пользователей скринридеров.
+- Сделать значения дробных ингредиентов удобнее для чтения.
+- Оформить пищевую ценность семантической таблицей и обновить изображение проекта.
