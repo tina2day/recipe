@@ -1,0 +1,36 @@
+.counter {
+  display: flex;
+  margin-bottom: 20px;
+}
+.counter__number {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+.counter__number::-webkit-inner-spin-button, .counter__number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.counter__number {
+  height: 50%;
+  width: 30px;
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+  text-align: center;
+  align-self: center;
+  padding-top: 7px;
+  border: 0;
+}
+.counter__number:focus {
+  outline: none;
+}
+.counter button {
+  border: 0;
+  color: hsl(14, 45%, 36%);
+  font-size: 60px;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}/*# sourceMappingURL=counter.css.map */

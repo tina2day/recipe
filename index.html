@@ -17,41 +17,52 @@
 <body class="body">
   <main class="content">
     <header class="header">
-      <img alt="Фото приготовленного блюда" class="header__recipe-picture" src="./assets/images/image-omelette.jpeg">
-      <h1 class="header__title">Simple Omelette Recipe</h1>
-      <p class="header__description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      <img alt="Фото приготовленного блюда" class="header__recipe-picture" src="./assets/images/creamy_mushroom_pasta.jpg">
+      <h1 class="header__title">Creamy mushroom pasta</h1>
+      <p class="header__description">Make this creamy mushroom pasta dish on days when you
+         need a big bowl of comfort. Cream, parmesan, white wine, lemon zest and parsley make
+          this a rich and flavourful dinner</p>
     </header>
     <section class="time">
       <h2 class="time__title">Preparation time</h2>
       <ul class="time__list">
-        <li><span>Total:</span> Approximately 10 minutes</li>
-        <li><span>Preparation:</span> 5 minutes</li>
-        <li><span>Cooking:</span> 5 minutes</li>
+        <li><span>Total:</span> Approximately 40 minutes</li>
+        <li><span>Preparation:</span> 15 minutes</li>
+        <li><span>Cooking:</span> 25 minutes</li>
       </ul>
     </section>
     <section class="ingredient">
       <h2 class="ingredient__title">Ingredients</h2>
+      <div class="counter">
+        <button type="button" id="less">🢐</button>
+        <input type="number" id="quantity" class="counter__number" value="4" min="1" max="10" step="1">
+        <button type="button" id="more">🢒</button>
+      </div>
       <ul class="ingredient__list">
-        <li>2-3 large eggs</li>
-        <li>Salt, to taste</li>
-        <li>Pepper, to taste</li>
-        <li>1 tablespoon of butter or oil</li>
-        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        <li><span class="count">300</span><span class="unit">g</span><span class="ingredient-item"> tagliatelle</span></li>
+        <li><span class="count">250</span><span class="unit">g</span><span class="ingredient-item"> mushrooms</span></li>
+        <li><span class="count">200</span><span class="unit">ml</span><span class="ingredient-item"> double cream</span></li>
+        <li><span class="count">200</span><span class="unit">g</span><span class="ingredient-item"> parmesan</span></li>
+        <li><span class="count">100</span><span class="unit">ml</span><span class="ingredient-item"> dry white wine</span></li>
+        <li><span class="count">2</span><span class="unit">tbsp</span><span class="ingredient-item"> olive oil</span></li>
+        <li><span class="count">1</span><span class="unit">tbsp</span><span class="ingredient-item"> butter</span></li>
+        <li><span class="count">1</span><span class="ingredient-item"> onion</span></li>
+        <li><span class="count">1</span><span class="ingredient-item"> garlic clove</span></li>
+        <li><span class="count">1</span><span class="ingredient-item"> lemon , zest only</span></li>
+        <li><span class="count">0.5</span><span class="ingredient-item"> small bunch parsley</span></li>
+        <li>Salt, pepper to taste</li>
       </ul>
+      <button id="reset">Reset</button>
     </section>
     <section class="instruction">
       <h2 class="instruction__title">Instructions</h2>
       <ol class="instruction__list">
-        <li><span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.</li>
-        <li><span>Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
-        <li><span>Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.</li>
-        <li><span>Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.</li>
-        <li><span>Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li><span>Heat the oil and butter:</span> Heat the oil and butter in a medium saucepan. 
+          Fry the onion over a low heat for 10 mins or until softened and translucent.</li>
+        <li><span>Add the ingredients:</span> Add the mushrooms and cook for 10 mins over a medium heat. 
+          Add the garlic and cook for 2 mins. Add the wine and bring to a simmer, reduce the liquid by half.</li>
+        <li><span>Add the cream:</span> Add the double cream and bring to a simmer, then add the lemon zest and parmesan. Season with salt and plenty of black pepper.</li>
+        <li><span>Cook the pasta:</span> Meanwhile, cook the pasta following pack instructions. Reserve 100ml of the pasta water. Toss the pasta in the pan with the creamy sauce and enough of the reserved water to loosen. Stir through the parsley, divide into bowls and top with extra cheese, if you like.</li>
         <li><span>Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
       </ol>
     </section>
@@ -59,10 +70,10 @@
       <h2 class="nutrition__title">Nutrition</h1>
       <p class="nutrition__description">The table below shows nutritional values per serving without the additional fillings.</p>
       <div class="nutrition__table">
-        <div class="nutrition__item">Calories <span>277kcal</span></div>
-        <div class="nutrition__item">Carbs <span>0g</span></div>
-        <div class="nutrition__item">Protein <span>20g</span></div>
-        <div class="nutrition__item"> Fat <span>22g</span></div>
+        <div class="nutrition__item">Calories <span>801kcal</span></div>
+        <div class="nutrition__item">Carbs <span>45g</span></div>
+        <div class="nutrition__item">Protein <span>29g</span></div>
+        <div class="nutrition__item"> Fat <span>52g</span></div>
       </div>
     </section>
     <footer class="attribution">
@@ -71,4 +82,5 @@
     </footer>
   </main>
 </body>
+<script src="src/js/main.js" type="module"></script>
 </html>

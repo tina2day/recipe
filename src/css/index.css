@@ -42,6 +42,9 @@
   width: 100%;
   border-radius: 10px;
   margin-top: 40px;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .header__recipe-picture {
@@ -94,6 +97,7 @@
   font-size: 24px;
   color: hsl(14, 45%, 36%);
   font-weight: 400;
+  margin-bottom: 0;
 }
 .ingredient__list {
   font-family: "Outfit";
@@ -110,6 +114,16 @@
 .ingredient__list li::marker {
   color: hsl(14, 45%, 36%);
   font-size: 0.6em;
+}
+
+#reset {
+  font-family: "Outfit";
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 5px;
+  background: hsl(14, 45%, 36%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
 }
 
 .instruction {
@@ -229,6 +243,43 @@
   .time__list {
     margin: 0px 0px 10px 35px;
   }
+}
+
+.counter {
+  display: flex;
+  margin-bottom: 20px;
+}
+.counter__number {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+.counter__number::-webkit-inner-spin-button, .counter__number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.counter__number {
+  height: 50%;
+  width: 30px;
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+  text-align: center;
+  align-self: center;
+  padding-top: 7px;
+  border: 0;
+}
+.counter__number:focus {
+  outline: none;
+}
+.counter button {
+  border: 0;
+  color: hsl(14, 45%, 36%);
+  font-size: 60px;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  background-color: white;
 }
 
 .body {
